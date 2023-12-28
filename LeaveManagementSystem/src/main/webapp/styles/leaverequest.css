@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
+body{
+	background-color: #1a73e8;
+	overflow: hidden;
+}
+
+
+.totalbody {
+  font-family: monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 70%;
+  /* margin-top: 100px; */
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  max-height: 575px;
+  margin-left: 20%;
+}
+.image-container {
+  flex: 1.1;
+  padding: 20px;
+  background-color: #b8f0f3;
+  text-align: center;
+  border-radius: 6px 0 0 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+  margin-top: 55px;
+  position: relative;
+  /* animation: borderAnimation 4s infinite linear; */
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+.form-container {
+  flex: 2;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+label {
+  font-weight: bold;
+  vertical-align: middle;
+  display: inline-block;
+  width: 150px;
+}
+
+.leavereq_input{
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.radio-group {
+  margin: 10px 0;
+}
+.leavereq_radio {
+  margin-right: 5px;
+}
+
+.leavereq_submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: buttonAnimation 2s infinite linear; /* Add button animation */
+}
+.leavereq_submit:hover {
+  background-color: #0056b3;
+}
+.date-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leavereq_input:focus{
+  outline: none;
+  border-color: #007bff;
+  border-bottom-width: 4px;
+  animation: inputfocusanimation 0.3s;
+}
+@keyframes inputfocusanimation{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes borderAnimation {
+  0%,
+  100% {
+    border: 4px solid rgb(255, 255, 255);
+  }
+  50% {
+    border: 4px solid #007bff;
+  }
+}
+@keyframes buttonAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+@keyframes formAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .container {
+    animation: formAnimation 2s ease;
+  }
+  
+  
+  .submit-message {
+  text-align: center;
+  margin-top: 10px;
+  color: green; /* Change this to your desired text color */
+  font-weight: bold;
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+  

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+.side_sidebar {
+  font-family: monospace;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+.side_sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  color: rgb(0, 0, 0);
+}
+
+.side_logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.side_nav-link {
+  padding: 15px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+
+.side_nav-link i {
+  min-width: 40px;
+  text-align: center;
+}
+
+.side_nav-link .link-text {
+  margin-left: 10px;
+}
+
+.side_nav-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #1a73e8;
+  color: rgb(255, 255, 255);
+}
+
+.content {
+  left: 250px;
+  padding: 20px;
+  position: relative;
+  max-width: fit-content;
+}
+
+@media (max-width: 768px) {
+  
+  .side_logo_mobile {
+    padding: 10px 0;
+    display: inline-block;
+    margin-right: auto;
+  }
+
+  .collapse-btn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  /* Adding colors from desktop view */
+  .navbar {
+    background-color: #ffffff;
+  }
+
+  .image {
+    width: 50px;
+  }
+
+  .navbar-light .navbar-toggler-icon:focus {
+    outline: none;
+  }
+
+  .navbar-nav .nav-link {
+    color: #000;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: #1a73e8;
+  }
+}
